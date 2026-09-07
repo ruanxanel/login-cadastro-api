@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: login-cadastro-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/login_cadastro_db
+    username: postgres
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: ${JWT_SECRET}
